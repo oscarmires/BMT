@@ -16,15 +16,15 @@ fi
 
 echo "Downloading i3d features"
 cd data/
-wget https://a3s.fi/swift/v1/AUTH_a235c0f452d648828f745589cde1219a/bmt/i3d_25fps_stack64step64_2stream_npy.zip -q --show-progress
+wget https://a3s.fi/swift/v1/AUTH_a235c0f452d648828f745589cde1219a/bmt/i3d_25fps_stack64step64_2stream_npy.zip
 echo "Downloading vggish features"
-wget https://a3s.fi/swift/v1/AUTH_a235c0f452d648828f745589cde1219a/bmt/vggish_npy.zip -q --show-progress
+wget https://a3s.fi/swift/v1/AUTH_a235c0f452d648828f745589cde1219a/bmt/vggish_npy.zip
 cd ../
 
 echo "Downloading GloVe embeddings"
 mkdir .vector_cache
 cd .vector_cache
-wget https://a3s.fi/swift/v1/AUTH_a235c0f452d648828f745589cde1219a/bmt/glove.840B.300d.zip -q --show-progress
+wget https://a3s.fi/swift/v1/AUTH_a235c0f452d648828f745589cde1219a/bmt/glove.840B.300d.zip
 cd ../
 
 echo "Checking for correctness of the downloaded files"
