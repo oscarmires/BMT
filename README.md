@@ -12,3 +12,11 @@ We maintain the structure from [BMT](https://github.com/v-iashin/BMT).
 All files created by us are located in the [clipping_experiments](https://github.com/oscarmires/BMT-Clipping/tree/master/clipping_experiments) directory. Refer to this directory's [README.md](https://github.com/oscarmires/BMT-Clipping/blob/master/clipping_experiments/README.md) to know more about the execution of the experiments.
 
 The original Readme file from BMT appears as [Prev_README.md](https://github.com/oscarmires/BMT-Clipping/blob/master/Prev_README.md).
+
+
+## Cloning the repository
+
+Mind the `--recursive` flag to make sure `submodules` are also cloned (evaluation scripts for Python 3 and scripts for feature extraction).
+```bash
+git clone --recursive https://github.com/v-iashin/BMT.git
+```
