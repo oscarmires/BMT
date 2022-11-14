@@ -18,5 +18,5 @@ The original Readme file from BMT appears as [Prev_README.md](https://github.com
 
 Mind the `--recursive` flag to make sure `submodules` are also cloned (evaluation scripts for Python 3 and scripts for feature extraction).
 ```bash
-git clone --recursive https://github.com/v-iashin/BMT.git
+git clone --recursive https://github.com/oscarmires/BMT-Clipping.git
 ```
