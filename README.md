@@ -1,6 +1,6 @@
 # Extended Dense Video Captions Using Input Clipping in a Bi-Modal Transformer
 
-[📄 Technical report]() · [📼 Video demonstration]() · [🧑‍🏫 Presentation]()
+[📄 Technical report](https://drive.google.com/file/d/1btVbFxP3_STBjPK563ynwNvZGgYmFZ0z/view?usp=share_link) · [📼 Video](https://drive.google.com/file/d/10JeLN7vhVgpjK5jFDPSA-CDMJqK8D5lT/view?usp=share_link) · [🧑‍🏫 Presentation](https://drive.google.com/file/d/1rc8oiVQbWr1Y5EwraDYdOWUKfRykKg9j/view?usp=share_link)
 
 Repository used for experimentation over the [BMT Model by Iashin & Rahtu (2020)](https://iashin.ai/bmt).
 This repository is a fork from [BMT](https://github.com/v-iashin/BMT).
