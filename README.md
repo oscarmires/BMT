@@ -9,7 +9,7 @@ This repository is a fork from [BMT](https://github.com/v-iashin/BMT).
 
 We maintain the structure from [BMT](https://github.com/v-iashin/BMT). 
 
-All files created by us are located in the [clipping_experiments](https://github.com/oscarmires/BMT-Clipping/tree/master/clipping_experiments) and the [clipping_modules](https://github.com/oscarmires/BMT-Clipping/tree/master/clipping_modules) directory. Refer to each directory's readme file to know more about the execution of the experiments and the modules.
+All files created by us are located in the [clipping_experiments](https://github.com/oscarmires/BMT-Clipping/tree/master/clipping_experiments) and the [clipping_modules](https://github.com/oscarmires/BMT-Clipping/tree/master/clipping_modules) directory. Refer to each directory's readme file to know more about the execution of the experiments and the modules. We also made changes to the file [sample/single_video_prediction.py](https://github.com/oscarmires/BMT-Clipping/blob/master/sample/single_video_prediction.py)
 
 The original Readme file from BMT is found as [Prev_README.md](https://github.com/oscarmires/BMT-Clipping/blob/master/Prev_README.md).
 
