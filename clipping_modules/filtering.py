@@ -64,14 +64,17 @@ class FilteringModule:
         df = pd.read_json(input_path, orient='records')
 
         for item in df.video_id.unique():
-            for i in range(len(df[df['video_id'] == item]['captions'])):
+            print("Filtering video:", item)
+            
+            suma = 0
+            for i in range(1, len(df[df['video_id'] == item]['captions'])):
+                suma = suma + df[df['video_id'] == item]['duration'].reset_index(drop=True)[i - 1]
                 for j in range(len(df[df['video_id'] == item]['captions'].reset_index(drop=True)[i])):
                     df[df['video_id'] == item]['captions'].reset_index(drop=True)[i][j]['start'] = \
-                        df[df['video_id'] == item]['captions'].reset_index(drop=True)[i][j]['start'] + \
-                        df[df['video_id'] == item]['clip_id'].reset_index(drop=True)[i] * tiempo
+                        df[df['video_id'] == item]['captions'].reset_index(drop=True)[i][j][
+                            'start'] + suma  # df[df['video_id'] == item]['duration'].reset_index(drop=True)[i-1]
                     df[df['video_id'] == item]['captions'].reset_index(drop=True)[i][j]['end'] = \
-                        df[df['video_id'] == item]['captions'].reset_index(drop=True)[i][j]['end'] + \
-                        df[df['video_id'] == item]['clip_id'].reset_index(drop=True)[i] * tiempo
+                        df[df['video_id'] == item]['captions'].reset_index(drop=True)[i][j]['end'] + suma  # df[d
                     self.captions.append(
                         df[df['video_id'] == item]['captions'].reset_index(drop=True)[i][j]['sentence'])
                     self.start_time.append(df[df['video_id'] == item]['captions'].reset_index(drop=True)[i][j]['start'])
