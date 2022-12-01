@@ -2,14 +2,16 @@
 
 This directory contains the source code for the proposed modules: clipping and filtering.
 
-## Use the Clipping Module
-In order to use the clipping module, you must add the path to the repository to your interpreter. 
-Then, import the module and create an instance. For example:
-
+Before using the modules, make sure to add the repo's path to your interpreter at the top of the file:
 ```python
 import sys
 sys.path.append('/home/my_user/BMT-Clipping/')
+```
 
+## Use the Clipping Module
+Import the module and create an instance. For example:
+
+```python
 from clipping_modules.clipping import ClippingModule
 
 
@@ -41,8 +43,7 @@ cm.get_clips(input_path=PATH_TO_VIDEO, name=VIDEO_NAME)
 
 
 ##  Use the Filtering Module
-Similarly, add the path to the repository to your interpreter (if you haven't already). 
-Then, import the module and create an instance. For example:
+Import the module and create an instance. For example:
 
 ```python
 import sys
