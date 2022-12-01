@@ -1,8 +1,8 @@
 # Clipping Modules
 
 This directory contains the source code for the proposed modules: clipping and filtering.
-
 Before using the modules, make sure to add the repo's path to your interpreter at the top of the file:
+
 ```python
 import sys
 sys.path.append('/home/my_user/BMT-Clipping/')
