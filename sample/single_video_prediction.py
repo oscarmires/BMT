@@ -289,6 +289,7 @@ if __name__ == "__main__":
     parser.add_argument('--max_prop_per_vid', type=int, default=5)
     parser.add_argument('--nms_tiou_thresh', type=float, help='removed if tiou > nms_tiou_thresh. In (0, 1)')
     parser.add_argument('--video_id', required=True)
+    parser.add_argument('--clip_id', required=True)
     parser.add_argument('--output_path', required=True)
     args = parser.parse_args()
 
@@ -319,10 +320,13 @@ if __name__ == "__main__":
     output_file_path = args.output_path
 
     captions_obj = {
-      "video_id": args.video_id,
-      "captions": captions,
-      "duration": args.duration_in_secs
+        "video_id": args.video_id,
+        "clip_id": args.clip_id,
+        "captions": captions,
+        "duration": args.duration_in_secs
     }
+    
+    print(captions_obj)
     
     with open(output_file_path, "r") as f:
         stored_captions = json.load(f)
@@ -331,7 +335,7 @@ if __name__ == "__main__":
         stored_captions.append(captions_obj)
         json.dump(stored_captions, f)
 
-    print(captions_obj)
+    
 
 
     # TODO: save original num of features (0th dim.) and just remove padding from them and trim accordingly
